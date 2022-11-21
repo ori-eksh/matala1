@@ -19,9 +19,9 @@ int isPrime(int);
 number. For Example: 145 is strong number
 1! + 4! + 5! = 145
 */
-int isArmstrong2(int);
+int isArmstrong(int);
 /* will return if a number is a palindrome */
-int isPalindrome2(int);
+int isPalindrome(int);
 int isStrong(int);
 int factorialVal(int);
 int rev(int , int );
