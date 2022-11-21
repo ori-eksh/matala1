@@ -7,7 +7,7 @@
 
 int isPalindrome(int num)
 {
-    if (num == rev(num,0)) return 1;
+    if (num == rev(num, 0)) return 1;
     return 0;
 }
 
@@ -18,13 +18,11 @@ int isArmstrong(int num)
     return 0;
 }
 
-
 int digCount(int x)
 {
     if(x == 0)return 0;
     return 1+ digCount(x/10);
 }
-
 
 int isArm(int num, int digs)
 {
@@ -33,16 +31,12 @@ int isArm(int num, int digs)
 
 }
 
-
-
-
-int rev(int n, int temp)
+int rev(int n, int r)
 {
-    if (n == 0)
-        return temp;
+    if (n==0)
+        return r;
 
-    // stores the reverse of a number
-    temp = (temp * 10) + (n % 10);
+    r = (r * 10) + n % 10;
 
-    return rev(n / 10, temp);
+    return rev(n / 10, r);
 }

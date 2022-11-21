@@ -39,7 +39,7 @@ maindloop: main.o libclassloops.so
 	gcc -Wall -g -o maindloop main.o ./libclassloops.so
 
 maindrec: main.o libclassrec.so
-	gcc -Wall -g -o maindloop main.o ./libclassrec.so
+	gcc -Wall -g -o maindrec main.o ./libclassrec.so
 
 
 
